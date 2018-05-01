@@ -782,17 +782,17 @@ if ( ! function_exists( 'hesta_bottom_footer_content' ) ) :
 			'hestia_general_credits',
 			sprintf(
 				/* translators: %1$s is Theme Name, %2$s is WordPress */
-				esc_html__( '%1$s | Powered by %2$s', 'hestia' ),
+				esc_html__( '%1$s | %2$s', 'texorts' ),
 				sprintf(
 					/* translators: %s is Theme name */
-					'<a href="https://themeisle.com/themes/hestia/" target="_blank" rel="nofollow">%s</a>',
-					esc_html__( 'Hestia', 'hestia' )
+					'<a href="https://texorts.com" target="_blank" rel="nofollow">%s</a>',
+					esc_html__( 'Texorts', 'texorts' )
 				),
 				/* translators: %s is WordPress */
 				sprintf(
 					'<a href="%1$s" rel="nofollow">%2$s</a>',
-					esc_url( __( 'http://wordpress.org', 'hestia' ) ),
-					esc_html__( 'WordPress', 'hestia' )
+					esc_url( __( 'https://texorts.com/', 'Texorts' ) ),
+					esc_html__( 'Tech Shorts', 'tech shorts' )
 				)
 			)
 		);
@@ -1281,7 +1281,7 @@ if ( ! function_exists( 'hestia_show_header_content' ) ) {
 					<?php
 				}
 				?>
-					<h1 class="hestia-title 
+					<h1 class="hestia-title
 					<?php
 					if ( $layout !== 'default' ) {
 						echo 'title-in-content';}
